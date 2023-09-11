@@ -36,22 +36,23 @@ class Ui_Imagesite(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.pushButton_pos = QtWidgets.QPushButton(parent=self.widget)
-        self.pushButton_pos.setObjectName("pushButton_pos")
-        self.verticalLayout.addWidget(self.pushButton_pos)
-        self.pushButton_neg = QtWidgets.QPushButton(parent=self.widget)
-        self.pushButton_neg.setObjectName("pushButton_neg")
-        self.verticalLayout.addWidget(self.pushButton_neg)
+        self.pushButton_happy = QtWidgets.QPushButton(parent=self.widget)
+        self.pushButton_happy.setObjectName("pushButton_happy")
+        self.verticalLayout.addWidget(self.pushButton_happy)
+        self.pushButton_sad = QtWidgets.QPushButton(parent=self.widget)
+        self.pushButton_sad.setObjectName("pushButton_sad")
+        self.verticalLayout.addWidget(self.pushButton_sad)
 
         self.retranslateUi(Imagesite)
-        self.pushButton_pos.clicked.connect(self.label.update) # type: ignore
+        # self.pushButton_happy.clicked.connect(self.label.update) # type: ignore
+        # self.pushButton_sad.clicked.connect(self.label.update) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(Imagesite)
 
     def retranslateUi(self, Imagesite):
         _translate = QtCore.QCoreApplication.translate
         Imagesite.setWindowTitle(_translate("Imagesite", "imagesite"))
-        self.pushButton_pos.setText(_translate("Imagesite", "Happy"))
-        self.pushButton_neg.setText(_translate("Imagesite", "Sad"))
+        self.pushButton_happy.setText(_translate("Imagesite", "Happy"))
+        self.pushButton_sad.setText(_translate("Imagesite", "Sad"))
 
 
 if __name__ == "__main__":

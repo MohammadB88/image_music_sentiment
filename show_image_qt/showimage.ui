@@ -62,14 +62,14 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPushButton" name="pushButton_pos">
+     <widget class="QPushButton" name="pushButton_happy">
       <property name="text">
        <string>Happy</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_neg">
+     <widget class="QPushButton" name="pushButton_sad">
       <property name="text">
        <string>Sad</string>
       </property>
@@ -81,7 +81,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton_pos</sender>
+   <sender>pushButton_happy</sender>
    <signal>clicked()</signal>
    <receiver>label</receiver>
    <slot>update()</slot>
@@ -89,6 +89,22 @@
     <hint type="sourcelabel">
      <x>88</x>
      <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>325</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_sad</sender>
+   <signal>clicked()</signal>
+   <receiver>label</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>88</x>
+     <y>212</y>
     </hint>
     <hint type="destinationlabel">
      <x>325</x>
