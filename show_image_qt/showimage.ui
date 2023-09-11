@@ -64,14 +64,14 @@
     <item>
      <widget class="QPushButton" name="pushButton_pos">
       <property name="text">
-       <string>Positive</string>
+       <string>Happy</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_neg">
       <property name="text">
-       <string>Negative</string>
+       <string>Sad</string>
       </property>
      </widget>
     </item>
@@ -83,16 +83,16 @@
   <connection>
    <sender>pushButton_pos</sender>
    <signal>clicked()</signal>
-   <receiver>pushButton_pos</receiver>
-   <slot>deleteLater()</slot>
+   <receiver>label</receiver>
+   <slot>update()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>88</x>
      <y>182</y>
     </hint>
     <hint type="destinationlabel">
-     <x>88</x>
-     <y>182</y>
+     <x>325</x>
+     <y>230</y>
     </hint>
    </hints>
   </connection>
